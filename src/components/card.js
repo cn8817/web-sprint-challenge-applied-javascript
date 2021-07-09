@@ -47,6 +47,7 @@ const Card = (article) => {
   return cardDiv
 }
 
+
 const cardAppender = (selector) => {
   // TASK 6
   // ---------------------
@@ -74,6 +75,8 @@ const cardAppender = (selector) => {
   })
   .catch(err => console.log(err.message))
   .finally(() => console.log('done'))
+
+  
 }
 
 export { Card, cardAppender }
