@@ -34,12 +34,12 @@ const Card = (article) => {
   cardDiv.appendChild(headline)
   cardDiv.appendChild(author)
   author.appendChild(imgContainer)
-  author.appendChild(authorPhoto)
   author.appendChild(authorName)
+  imgContainer.appendChild(authorPhoto)
 
-  headline.textContent = `${headline}`
-  authorName.textContent = `${authorName}`
-  authorPhoto.src = authorPhoto //`${authorPhoto}`
+  headline.textContent = article.headline
+  authorName.textContent = article.authorName
+  authorPhoto.src = article.authorPhoto 
   
   cardDiv.addEventListener('click', () => {
     console.log(headline)
