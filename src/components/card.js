@@ -37,8 +37,8 @@ const Card = (article) => {
   author.appendChild(authorPhoto)
   author.appendChild(authorName)
 
-  headline.textContent = article.bootstrap[0]
-  authorName.textContent = article.authorName
+  headline.textContent = `${headline}`
+  authorName.textContent = `${authorName}`
   authorPhoto.src = authorPhoto //`${authorPhoto}`
   
   cardDiv.addEventListener('click', () => {
@@ -71,7 +71,6 @@ const cardAppender = (selector) => {
     //   cardContainer(item)
     // })
     cardContainer.appendChild(newCard)
-    console.log(newCard)
   })
   .catch(err => console.log(err.message))
   .finally(() => console.log('done'))
